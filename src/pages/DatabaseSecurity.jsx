@@ -46,15 +46,6 @@ const DatabaseSecurity = () => (
         </div>
       </div>
     </section>
-
-    {/* Call-to-Action Bar */}
-    <section style={{ background: '#232946', color: '#fff', padding: '2rem 0', textAlign: 'center' }}>
-      <h2 style={{ fontWeight: 700, fontSize: '1.7rem', marginBottom: '0.7rem' }}>[Ready to secure your data?]</h2>
-      <p style={{ fontSize: '1.08rem', opacity: 0.92, marginBottom: '1.2rem' }}>[Contact us today to learn more about our database security solutions.]</p>
-      <button style={{ background: '#eebf63', color: '#232946', border: 'none', borderRadius: 6, padding: '0.8rem 2.2rem', fontWeight: 600, fontSize: '1.1rem', cursor: 'pointer', boxShadow: '0 2px 8px rgba(44,62,80,0.10)' }}>
-        [Get Started]
-      </button>
-    </section>
   </>
 );
 

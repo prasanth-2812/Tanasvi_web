@@ -14500,4 +14500,29 @@ input.main-search-input::placeholder {
 .logo img{
   width: 200px;
   height: auto;
+
+  .project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.project-card .icon {
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.project-card:hover .icon {
+  transform: scale(1.2);
+}
+
 }/*# sourceMappingURL=main.css.map */

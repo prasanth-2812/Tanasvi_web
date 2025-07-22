@@ -25,7 +25,7 @@ import Inventory from './pages/Inventory.jsx';
 import HomeAutomation from './pages/HomeAutomation.jsx';
 import AIModels from './pages/AIModels.jsx';
 import LMS from './pages/Lms.jsx';
-import CRM from './pages/Crm.jsx';
+import Crm from './pages/Crm.jsx';
 
 // Services
 import DatabaseSecurity from './pages/DatabaseSecurity.jsx';
@@ -71,7 +71,7 @@ function App() {
             <Route path="/project/home-automation" element={<HomeAutomation />} />
             <Route path="/project/ai-models" element={<AIModels />} />
             <Route path="/project/Lms" element={<LMS />} />
-            <Route path="/project/Crm" element={<CRM />} />
+            <Route path="/project/Crm" element={<Crm />} />
             {/* Services routes*/}
             <Route path="/service/databaseSecurity" element={<DatabaseSecurity />} />
             {/* 404 Fallback */}

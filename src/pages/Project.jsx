@@ -41,18 +41,77 @@ const Project = () => (
         </div>
         <div className="service-wrapper mb-0">
           <div className="row">
-            {[
-              {
+            {[{
                 name: "Human Resource Management (HRM)",
                 description: "Centralized HR system covering recruitment, payroll, performance, and compliance.",
                 image: "/img/project/hrm.jpg",
                 link: "/project/hrm"
               },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              
               {
                 name: "Shipping Company Models",
                 description: "Logistics management with fleet, cargo, route optimization.",
                 image: "/img/project/shipping.jpg",
-                link: "/project/Shipping"
+                link: "/project/shipping"
               },
               {
                 name: "Inventory Models",
