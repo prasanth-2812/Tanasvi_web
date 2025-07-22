@@ -6244,7 +6244,7 @@ h6 {
 
 .header-top-section {
   background-color: var(--header);
-  padding: 10px 0;
+  padding: -5px 0;
   position: relative;
   z-index: 99;
 }
@@ -6265,6 +6265,7 @@ h6 {
   background-color: var(--theme);
   z-index: -1;
   left: 81%;
+  
 }
 @media (max-width: 1899px) {
   .header-top-section::before {

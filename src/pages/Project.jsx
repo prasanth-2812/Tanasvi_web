@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Project = () => (
   <>
@@ -27,7 +28,7 @@ const Project = () => (
       <div className="container"></div>
     </div>
 
-    {/* Project Section Start (Similar to Service layout) */}
+    {/* Project Section Start (Clickable with images and links) */}
     <section className="service-section fix section-padding">
       <div className="container">
         <div className="section-title title-area mx-auto mb-20">
@@ -36,55 +37,76 @@ const Project = () => (
             <span> OUR PROJECTS </span>
             <img src="/img/icon/arrowRight.svg" alt="icon" />
           </div>
-          <h2 className="title text-center"> We Delivered Awesome Solutions </h2>
+          <h2 className="title text-center">We Delivered Innovative and Customized Solutions</h2>
         </div>
         <div className="service-wrapper mb-0">
           <div className="row">
-            {/* Example Projects */}
-            <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-              <div className="service-box-items box-shadow">
-                <div className="icon">
-                  <img src="/img/project/icon/project-1.svg" alt="icon-img" />
-                </div>
-                <div className="content">
-                  <h4><a href="#">OTT Platform</a></h4>
-                </div>
+            {[
+              {
+                name: "Human Resource Management (HRM)",
+                description: "Centralized HR system covering recruitment, payroll, performance, and compliance.",
+                image: "/img/project/hrm.jpg",
+                link: "/project/hrm"
+              },
+              {
+                name: "Shipping Company Models",
+                description: "Logistics management with fleet, cargo, route optimization.",
+                image: "/img/project/shipping.jpg",
+                link: "/project/Shipping"
+              },
+              {
+                name: "Inventory Models",
+                description: "Stock visibility, demand planning, and distribution tracking.",
+                image: "/img/project/inventory.jpg",
+                link: "/project/inventory"
+              },
+              {
+                name: "Home Automation",
+                description: "IoT platform for smart devices, energy saving, and security.",
+                image: "/img/project/home.jpg",
+                link: "/project/home-automation"
+              },
+              {
+                name: "AI Based Models",
+                description: "Custom ML models for NLP, computer vision, and forecasting.",
+                image: "/img/project/ai.jpg",
+                link: "/project/ai-models"
+              },
+              {
+                name: "Learning Management System (LMS)",
+                description: "E-learning with course creation, exams, certification & analytics.",
+                image: "/img/project/lms.jpg",
+                link: "/project/lms"
+              },
+              {
+                name: "Customer Relationship Management (CRM)",
+                description: "Lead capture, client communication, and automation tools.",
+                image: "/img/project/crm.jpg",
+                link: "/project/crm"
+              }
+            ].map((project, index) => (
+              <div
+                className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
+                data-wow-delay={`.${index + 3}s`}
+                key={project.name}
+              >
+                <Link to={project.link} className="text-decoration-none">
+                  <div className="service-box-items box-shadow p-3" style={{ minHeight: '300px' }}>
+                    <div className="icon mb-3">
+                      <img
+                        src={project.image}
+                        alt={`${project.name} icon`}
+                        style={{ width: '100%', height: '160px', objectFit: 'cover', borderRadius: '8px' }}
+                      />
+                    </div>
+                    <div className="content">
+                      <h5>{project.name}</h5>
+                      <p style={{ fontSize: '0.9rem' }}>{project.description}</p>
+                    </div>
+                  </div>
+                </Link>
               </div>
-            </div>
-
-            <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-              <div className="service-box-items box-shadow active">
-                <div className="icon">
-                  <img src="/img/project/icon/project-2.svg" alt="icon-img" />
-                </div>
-                <div className="content">
-                  <h4><a href="#">E-commerce Solution</a></h4>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-              <div className="service-box-items box-shadow">
-                <div className="icon">
-                  <img src="/img/project/icon/project-3.svg" alt="icon-img" />
-                </div>
-                <div className="content">
-                  <h4><a href="#">School Management</a></h4>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".9s">
-              <div className="service-box-items box-shadow">
-                <div className="icon">
-                  <img src="/img/project/icon/project-4.svg" alt="icon-img" />
-                </div>
-                <div className="content">
-                  <h4><a href="#">AI Chatbot</a></h4>
-                </div>
-              </div>
-            </div>
-
+            ))}
           </div>
         </div>
       </div>
