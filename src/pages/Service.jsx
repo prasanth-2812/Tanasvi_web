@@ -31,62 +31,104 @@ const Service = () => (
     {/* Service Section Start */}
     <section className="service-section fix section-padding">
       <div className="container">
-        <div className="section-title title-area  mx-auto mb-20">
-          <div className="subtitle d-flex justify-content-center"> <img src="/img/icon/arrowLeft.svg" alt="icon" /> <span> OUR SERVICES </span><img src="/img/icon/arrowRight.svg" alt="icon" /></div>
+        <div className="section-title title-area mx-auto mb-20">
+          <div className="subtitle d-flex justify-content-center">
+            <img src="/img/icon/arrowLeft.svg" alt="icon" />
+            <span> OUR SERVICES </span>
+            <img src="/img/icon/arrowRight.svg" alt="icon" />
+          </div>
           <h2 className="title text-center"> We Provide the Best Quality </h2>
         </div>
         <div className="service-wrapper mb-0">
           <div className="row">
-            {/* Repeat for each service box, updating asset paths and links as above */}
             <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
               <div className="service-box-items box-shadow">
                 <div className="icon">
                   <img src="/img/service/icon/s-icon-1.svg" alt="icon-img" />
                 </div>
                 <div className="content">
-                  <h4>
-                    <a href="#">Database Security</a>
-                  </h4>
+                  <h4><a href="#">Database Security</a></h4>
                 </div>
               </div>
             </div>
+
             <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
               <div className="service-box-items box-shadow active">
                 <div className="icon">
                   <img src="/img/service/icon/s-icon-2.svg" alt="icon-img" />
                 </div>
                 <div className="content">
-                  <h4>
-                    <a href="#">IT Consultancy</a>
-                  </h4>
+                  <h4><a href="#">IT Consultancy</a></h4>
                 </div>
               </div>
             </div>
+
             <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s">
               <div className="service-box-items box-shadow">
                 <div className="icon">
                   <img src="/img/service/icon/s-icon-3.svg" alt="icon-img" />
                 </div>
                 <div className="content">
-                  <h4>
-                    <a href="#">Cyber Security</a>
-                  </h4>
+                  <h4><a href="#">Cyber Security</a></h4>
                 </div>
               </div>
             </div>
+
             <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".9s">
               <div className="service-box-items box-shadow">
                 <div className="icon">
                   <img src="/img/service/icon/s-icon-4.svg" alt="icon-img" />
                 </div>
                 <div className="content">
-                  <h4>
-                    <a href="#">App Development</a>
-                  </h4>
+                  <h4><a href="#">App Development</a></h4>
                 </div>
               </div>
             </div>
-            {/* ...other service boxes... */}
+
+            <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.1s">
+              <div className="service-box-items box-shadow">
+                <div className="icon">
+                  <img src="/img/service/icon/s-icon-10.svg" alt="icon-img" />
+                </div>
+                <div className="content">
+                  <h4><a href="#">UI/UX Design</a></h4>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.3s">
+              <div className="service-box-items box-shadow">
+                <div className="icon">
+                  <img src="/img/service/icon/s-icon-11.svg" alt="icon-img" />
+                </div>
+                <div className="content">
+                  <h4><a href="#">IT Management</a></h4>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.5s">
+              <div className="service-box-items box-shadow">
+                <div className="icon">
+                  <img src="/img/service/icon/s-icon-12.svg" alt="icon-img" />
+                </div>
+                <div className="content">
+                  <h4><a href="#">Digital Marketing</a></h4>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.7s">
+              <div className="service-box-items box-shadow">
+                <div className="icon">
+                  <img src="/img/service/icon/s-icon-13.svg" alt="icon-img" />
+                </div>
+                <div className="content">
+                  <h4><a href="#">Data Analysis</a></h4>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -94,4 +136,4 @@ const Service = () => (
   </>
 );
 
-export default Service; 
+export default Service;
