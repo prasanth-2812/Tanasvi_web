@@ -27,6 +27,9 @@ import AIModels from './pages/AIModels.jsx';
 import LMS from './pages/Lms.jsx';
 import CRM from './pages/Crm.jsx';
 
+// Services
+import DatabaseSecurity from './pages/DatabaseSecurity.jsx';
+
 function App() {
   return (
     <>
@@ -69,6 +72,8 @@ function App() {
             <Route path="/project/ai-models" element={<AIModels />} />
             <Route path="/project/Lms" element={<LMS />} />
             <Route path="/project/Crm" element={<CRM />} />
+            {/* Services routes*/}
+            <Route path="/service/databaseSecurity" element={<DatabaseSecurity />} />
             {/* 404 Fallback */}
             <Route path="*" element={<NotFound />} />
           </Routes>

@@ -28,7 +28,7 @@ const Service = () => (
       <div className="container"></div>
     </div>
 
-    {/* Service Section Start */}
+    {/* Service Section Start (Clickable with images and links) */}
     <section className="service-section fix section-padding">
       <div className="container">
         <div className="section-title title-area mx-auto mb-20">
@@ -37,98 +37,82 @@ const Service = () => (
             <span> OUR SERVICES </span>
             <img src="/img/icon/arrowRight.svg" alt="icon" />
           </div>
-          <h2 className="title text-center"> We Provide the Best Quality </h2>
+          <h2 className="title text-center">We Provide the Best Quality</h2>
         </div>
         <div className="service-wrapper mb-0">
           <div className="row">
-            <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-              <div className="service-box-items box-shadow">
-                <div className="icon">
-                  <img src="/img/service/icon/s-icon-1.svg" alt="icon-img" />
-                </div>
-                <div className="content">
-                  <h4><a href="#">Database Security</a></h4>
-                </div>
+            {[
+              {
+                name: "Database Security",
+                description: "Protect your data with advanced encryption, access controls, and monitoring.",
+                image: "/img/service/icon/s-icon-1.svg",
+                link: "/service/DatabaseSecurity"
+              },
+              {
+                name: "IT Consultancy",
+                description: "Expert advice to optimize your IT infrastructure and strategy.",
+                image: "/img/service/icon/s-icon-2.svg",
+                link: "/service/it-consultancy"
+              },
+              {
+                name: "Cyber Security",
+                description: "Comprehensive solutions to safeguard your business from cyber threats.",
+                image: "/img/service/icon/s-icon-3.svg",
+                link: "/service/cyber-security"
+              },
+              {
+                name: "App Development",
+                description: "Custom mobile and web applications tailored to your business needs.",
+                image: "/img/service/icon/s-icon-4.svg",
+                link: "/service/app-development"
+              },
+              {
+                name: "UI/UX Design",
+                description: "Intuitive and engaging designs for seamless user experiences.",
+                image: "/img/service/icon/s-icon-10.svg",
+                link: "/service/ui-ux-design"
+              },
+              {
+                name: "IT Management",
+                description: "End-to-end management of your IT operations and assets.",
+                image: "/img/service/icon/s-icon-11.svg",
+                link: "/service/it-management"
+              },
+              {
+                name: "Digital Marketing",
+                description: "Grow your brand with SEO, social media, and digital campaigns.",
+                image: "/img/service/icon/s-icon-12.svg",
+                link: "/service/digital-marketing"
+              },
+              {
+                name: "Data Analysis",
+                description: "Transform data into actionable insights for better decision-making.",
+                image: "/img/service/icon/s-icon-13.svg",
+                link: "/service/data-analysis"
+              }
+            ].map((service, index) => (
+              <div
+                className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
+                data-wow-delay={`.${index + 3}s`}
+                key={service.name}
+              >
+                <Link to={service.link} className="text-decoration-none">
+                  <div className="service-box-items box-shadow p-3" style={{ minHeight: '300px' }}>
+                    <div className="icon mb-3">
+                      <img
+                        src={service.image}
+                        alt={`${service.name} icon`}
+                        style={{ width: '100%', height: '160px', objectFit: 'contain', borderRadius: '8px', background: '#f8f9fa' }}
+                      />
+                    </div>
+                    <div className="content">
+                      <h5>{service.name}</h5>
+                      <p style={{ fontSize: '0.9rem' }}>{service.description}</p>
+                    </div>
+                  </div>
+                </Link>
               </div>
-            </div>
-
-            <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-              <div className="service-box-items box-shadow active">
-                <div className="icon">
-                  <img src="/img/service/icon/s-icon-2.svg" alt="icon-img" />
-                </div>
-                <div className="content">
-                  <h4><a href="#">IT Consultancy</a></h4>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-              <div className="service-box-items box-shadow">
-                <div className="icon">
-                  <img src="/img/service/icon/s-icon-3.svg" alt="icon-img" />
-                </div>
-                <div className="content">
-                  <h4><a href="#">Cyber Security</a></h4>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".9s">
-              <div className="service-box-items box-shadow">
-                <div className="icon">
-                  <img src="/img/service/icon/s-icon-4.svg" alt="icon-img" />
-                </div>
-                <div className="content">
-                  <h4><a href="#">App Development</a></h4>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.1s">
-              <div className="service-box-items box-shadow">
-                <div className="icon">
-                  <img src="/img/service/icon/s-icon-10.svg" alt="icon-img" />
-                </div>
-                <div className="content">
-                  <h4><a href="#">UI/UX Design</a></h4>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.3s">
-              <div className="service-box-items box-shadow">
-                <div className="icon">
-                  <img src="/img/service/icon/s-icon-11.svg" alt="icon-img" />
-                </div>
-                <div className="content">
-                  <h4><a href="#">IT Management</a></h4>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.5s">
-              <div className="service-box-items box-shadow">
-                <div className="icon">
-                  <img src="/img/service/icon/s-icon-12.svg" alt="icon-img" />
-                </div>
-                <div className="content">
-                  <h4><a href="#">Digital Marketing</a></h4>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.7s">
-              <div className="service-box-items box-shadow">
-                <div className="icon">
-                  <img src="/img/service/icon/s-icon-13.svg" alt="icon-img" />
-                </div>
-                <div className="content">
-                  <h4><a href="#">Data Analysis</a></h4>
-                </div>
-              </div>
-            </div>
-
+            ))}
           </div>
         </div>
       </div>
